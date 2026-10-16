@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Publish scheduled Threads posts.
 
-Reads posts/YYYY-MM-DD.json (KST date). Each entry: {"hour": 10, "app": "...", "text": "..."}.
-Publishes every post whose hour <= current KST hour and that is not yet recorded in
+Reads posts/YYYY-MM-DD.json (KST date). Each entry:
+  {"time": "10:17", "app": "...", "text": "..."}   (preferred)
+  {"hour": 10, ...}                                 (legacy; means HH:00)
+Publishes every post whose time <= now (KST) and that is not yet recorded in
 state/YYYY-MM-DD.json. Safe to run repeatedly (idempotent).
 
 Env:
@@ -54,6 +56,18 @@ def main() -> int:
     now = datetime.now(KST)
     date = os.environ.get("POST_DATE") or now.strftime("%Y-%m-%d")
     hour = int(os.environ.get("POST_HOUR") or now.hour)
+    minute = int(os.environ.get("POST_MINUTE") or (now.minute if not os.environ.get("POST_HOUR") else 59))
+    now_min = hour * 60 + minute
+
+    def when(p):
+        t = p.get("time")
+        if t:
+            h, m = t.split(":")
+            return int(h) * 60 + int(m)
+        return int(p["hour"]) * 60
+
+    def key_of(p):
+        return p.get("time") or f"{int(p['hour']):02d}:00"
 
     posts_file = ROOT / "posts" / f"{date}.json"
     state_file = ROOT / "state" / f"{date}.json"
@@ -64,15 +78,15 @@ def main() -> int:
     posts = json.loads(posts_file.read_text(encoding="utf-8"))
     state = json.loads(state_file.read_text(encoding="utf-8")) if state_file.exists() else {}
 
-    due = [p for p in posts if int(p["hour"]) <= hour and str(p["hour"]) not in state]
+    due = [p for p in posts if when(p) <= now_min and key_of(p) not in state]
     if not due:
-        print(f"{date} {hour:02d}:xx KST — nothing due")
+        print(f"{date} {hour:02d}:{minute:02d} KST — nothing due")
         return 0
 
     failures = 0
-    for p in sorted(due, key=lambda x: int(x["hour"])):
-        key = str(p["hour"])
-        label = f"{date} {int(p['hour']):02d}:00 [{p.get('app', '')}]"
+    for p in sorted(due, key=when):
+        key = key_of(p)
+        label = f"{date} {key} [{p.get('app', '')}]"
         if DRY_RUN:
             print(f"DRY RUN {label}\n{p['text']}\n")
             state[key] = {"dry_run": True, "at": now.isoformat()}
