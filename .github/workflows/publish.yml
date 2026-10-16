@@ -11,6 +11,14 @@ on:
         description: "Dry run (print only, no posting)"
         type: boolean
         default: false
+      check:
+        description: "Only verify the token (calls /me, posts nothing)"
+        type: boolean
+        default: false
+      test_post:
+        description: "Publish this exact text as a one-off test post"
+        type: string
+        default: ""
 
 concurrency:
   group: threads-publish
@@ -35,6 +43,8 @@ jobs:
         env:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
           DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
+          CHECK: ${{ inputs.check && '1' || '' }}
+          TEST_POST: ${{ inputs.test_post }}
         run: python publish.py
 
       - name: Commit state

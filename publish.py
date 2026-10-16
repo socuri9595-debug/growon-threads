@@ -97,4 +97,12 @@ if __name__ == "__main__":
     if not TOKEN and not DRY_RUN:
         print("THREADS_TOKEN missing", file=sys.stderr)
         sys.exit(2)
+    if os.environ.get("CHECK") == "1":
+        me = api("GET", "/me", {"fields": "id,username,threads_profile_picture_url"})
+        print(f"token OK — @{me.get('username')} (id {me.get('id')})")
+        sys.exit(0)
+    if os.environ.get("TEST_POST"):
+        pid = publish_text(os.environ["TEST_POST"])
+        print(f"test post published -> {pid}")
+        sys.exit(0)
     sys.exit(main())
