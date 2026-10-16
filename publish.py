@@ -99,7 +99,9 @@ if __name__ == "__main__":
         sys.exit(2)
     if os.environ.get("CHECK") == "1":
         me = api("GET", "/me", {"fields": "id,username,threads_profile_picture_url"})
-        print(f"token OK — @{me.get('username')} (id {me.get('id')})")
+        msg = f"token OK — @{me.get('username')} (id {me.get('id')}) at {datetime.now(KST).isoformat()}"
+        print(msg)
+        (ROOT / "state" / "last_check.txt").write_text(msg + "\n", encoding="utf-8")
         sys.exit(0)
     if os.environ.get("TEST_POST"):
         pid = publish_text(os.environ["TEST_POST"])
