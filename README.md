@@ -11,6 +11,12 @@
 Settings → Secrets and variables → Actions → **New repository secret**
 - `THREADS_TOKEN` : Threads 장기 액세스 토큰 (60일마다 재발급)
 
+## 계정 보호 원칙
+- 하루 발행 수는 `plan.json`의 `ramp`로 천천히 늘림: 첫 2주 3개 → 4개 → 5개. `hard_cap`(6) 절대 초과 안 함.
+- 글 종류를 섞음(A 공감→만든 이유 / B 장면만, 앱 이름 없음 / C 만드는 사람 이야기). "앱스토어_" 꼬리와 "그래서 만들었어요"는 하루 최대 2개.
+- 발행 시간은 아침·점심·저녁 자연스러운 시간대에 불규칙하게.
+- 사용자가 직접: 매일 몇 분 다른 글에 좋아요·답글, 팔로우. 답글 달리면 답하기.
+
 ## 반응 기반 조정
 - `insights.py` (매일 07:50 KST) — 최근 7일 글의 조회·좋아요·답글·리포스트를 `metrics/`에 기록. `THREADS_TOKEN`에 `threads_manage_insights` 권한 필요.
-- `plan.json` — 앱별 하루 발행 개수. 매주 금요일 Claude가 `metrics/summary.json`을 보고 반응 좋은 앱은 늘리고(최대 2/일), 반응 없는 앱은 한 단계씩 줄임(1 → 0.5 → 0.25 → 0).
+- `plan.json` `weights` — 앱별 비중. 매주 금요일 Claude가 `metrics/summary.json`을 보고 반응 좋은 앱은 한 단계 올리고, 없는 앱은 한 단계 내림(0.5 ~ 3). 하루 총 개수는 바꾸지 않음.
