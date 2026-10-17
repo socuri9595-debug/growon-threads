@@ -36,7 +36,18 @@ def api(method: str, path: str, params: dict) -> dict:
         return json.loads(r.read().decode())
 
 
+def recent_texts(limit: int = 25) -> set[str]:
+    """최근 올린 글 본문(공백 정규화). 중복 발행 방지용."""
+    try:
+        data = api("GET", "/me/threads", {"fields": "id,text,timestamp", "limit": limit})
+    except Exception:  # noqa: BLE001
+        return set()
+    return {" ".join((p.get("text") or "").split()) for p in data.get("data", [])}
+
+
 def publish_text(text: str) -> str:
+    if " ".join(text.split()) in recent_texts():
+        raise RuntimeError("DUPLICATE: same text already posted recently")
     container = api("POST", "/me/threads", {"media_type": "TEXT", "text": text})
     cid = container["id"]
     # wait until the container is ready
@@ -95,6 +106,13 @@ def main() -> int:
             post_id = publish_text(p["text"])
             state[key] = {"post_id": post_id, "at": datetime.now(KST).isoformat()}
             print(f"posted {label} -> {post_id}")
+        except RuntimeError as e:
+            if str(e).startswith("DUPLICATE"):
+                state[key] = {"skipped": "duplicate", "at": datetime.now(KST).isoformat()}
+                print(f"skipped {label}: already posted")
+            else:
+                failures += 1
+                print(f"FAILED {label}: {e}", file=sys.stderr)
         except Exception as e:  # noqa: BLE001
             failures += 1
             print(f"FAILED {label}: {e}", file=sys.stderr)
