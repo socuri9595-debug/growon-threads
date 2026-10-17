@@ -22,7 +22,10 @@ from pathlib import Path
 
 KST = timezone(timedelta(hours=9))
 API = "https://graph.threads.net/v1.0"
-ROOT = Path(__file__).resolve().parent
+REPO = Path(__file__).resolve().parent
+# ACCOUNT="" → 저장소 루트(growon). ACCOUNT="salkka" → accounts/salkka/ 아래 posts/state, 토큰은 THREADS_TOKEN_SALKKA
+ACCOUNT = os.environ.get("ACCOUNT", "").strip()
+ROOT = REPO / "accounts" / ACCOUNT if ACCOUNT else REPO
 
 
 def api(method: str, path: str, params: dict) -> dict:
@@ -124,11 +127,11 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    TOKEN = os.environ.get("THREADS_TOKEN", "")
+    TOKEN = os.environ.get(f"THREADS_TOKEN_{ACCOUNT.upper()}" if ACCOUNT else "THREADS_TOKEN", "")
     DRY_RUN = os.environ.get("DRY_RUN") == "1"
     if not TOKEN and not DRY_RUN:
-        print("THREADS_TOKEN missing", file=sys.stderr)
-        sys.exit(2)
+        print(f"[{ACCOUNT or 'growon'}] token not set yet; skipping")
+        sys.exit(0)
     if os.environ.get("CHECK") == "1":
         me = api("GET", "/me", {"fields": "id,username,threads_profile_picture_url"})
         msg = f"token OK — @{me.get('username')} (id {me.get('id')}) at {datetime.now(KST).isoformat()}"

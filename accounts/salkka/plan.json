@@ -1,0 +1,14 @@
+{
+  "_comment": "살까말까 계정. 자동 작업은 일상 글(D)만 쓴다. 제휴 글은 2주차부터 사용자가 Threads Studio에서 직접 올린다.",
+  "start_date": "2026-10-17",
+  "hard_cap": 5,
+  "ramp": [
+    {"from_day": 0, "per_day": 3},
+    {"from_day": 14, "per_day": 4}
+  ],
+  "phases": [
+    {"from_day": 0, "name": "warm-up", "kinds": {"D": 1.0}, "note": "10/17~10/23 일상 글만. 링크·쿠팡·공정위 문구 금지."},
+    {"from_day": 7, "name": "affiliate-light", "kinds": {"D": 1.0}, "note": "10/24~ 자동은 여전히 D만. 제휴 글은 사용자가 Studio에서 주 2개(일반 글 사이에)."},
+    {"from_day": 14, "name": "steady", "kinds": {"D": 1.0}, "note": "10/31~ 제휴 글 주 3개(사용자). 한 달 뒤 하루 4개 중 제휴 1개까지."}
+  ]
+}
