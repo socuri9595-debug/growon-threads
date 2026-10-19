@@ -9,7 +9,7 @@
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-18T09:27:33.614348+09:00"
+    "fetched_at": "2026-10-19T09:33:20.554640+09:00"
   },
   {
     "date": "2026-10-17",
@@ -17,22 +17,65 @@
     "app": "출근하는 건물주",
     "post_id": "18103802252140293",
     "views": 6,
-    "likes": 0,
+    "likes": 1,
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-18T09:27:33.874271+09:00"
+    "fetched_at": "2026-10-19T09:33:20.689397+09:00"
   },
   {
     "date": "2026-10-17",
     "time": "19:16",
     "app": "고양이 귀여워",
     "post_id": "17926380882201011",
-    "views": 801,
-    "likes": 21,
-    "replies": 7,
+    "views": 869,
+    "likes": 22,
+    "replies": 12,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-18T09:27:34.075487+09:00"
+    "fetched_at": "2026-10-19T09:33:20.903856+09:00"
+  },
+  {
+    "date": "2026-10-18",
+    "time": "10:07",
+    "app": "출근하는 건물주",
+    "post_id": "17964564576200152",
+    "views": 135,
+    "likes": 1,
+    "replies": 0,
+    "reposts": 0,
+    "quotes": 0,
+    "fetched_at": "2026-10-19T09:33:21.090499+09:00"
+  },
+  {
+    "date": "2026-10-18",
+    "time": "12:23",
+    "app": "고양이 귀여워",
+    "post_id": "18197572432376115",
+    "error": "HTTP 400: {\"error\":{\"message\":\"Unsupported get request. Object with ID '18197572432376115' does not exist, cannot be loaded due to missing permissions, or does not support this operation\",\"code\":100,\"type\":\"THApiException\",\"error_subcode\":33,\"fbtrace_id\":\"A_agsXW9HhJHzd8mr2_xnUh\"}}"
+  },
+  {
+    "date": "2026-10-18",
+    "time": "21:34",
+    "app": "출근하는 건물주",
+    "post_id": "17928288996186313",
+    "views": 5,
+    "likes": 1,
+    "replies": 0,
+    "reposts": 0,
+    "quotes": 0,
+    "fetched_at": "2026-10-19T09:33:21.362753+09:00"
+  },
+  {
+    "date": "2026-10-19",
+    "time": "08:12",
+    "app": "출근하는 건물주",
+    "post_id": "18106951298209529",
+    "views": 160,
+    "likes": 0,
+    "replies": 0,
+    "reposts": 0,
+    "quotes": 0,
+    "fetched_at": "2026-10-19T09:33:21.635367+09:00"
   }
 ]
