@@ -1,30 +1,30 @@
 {
   "window_days": 7,
-  "generated_at": "2026-10-21T10:03:44.643028+09:00",
+  "generated_at": "2026-10-22T09:59:14.479721+09:00",
   "apps": [
     {
       "app": "고양이 귀여워",
-      "posts": 3,
+      "posts": 4,
       "avg": {
-        "views": 310.7,
-        "likes": 7.3,
-        "replies": 4.0,
+        "views": 287.2,
+        "likes": 5.5,
+        "replies": 3.0,
         "reposts": 0.0,
         "quotes": 0.0
       },
-      "score": 22.41
+      "score": 17.37
     },
     {
       "app": "출근하는 건물주",
-      "posts": 9,
+      "posts": 11,
       "avg": {
-        "views": 52.6,
-        "likes": 0.6,
+        "views": 67.1,
+        "likes": 0.5,
         "replies": 0.2,
         "reposts": 0.0,
         "quotes": 0.0
       },
-      "score": 1.73
+      "score": 1.77
     }
   ]
 }
