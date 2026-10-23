@@ -4,186 +4,222 @@
     "time": "09:52",
     "app": "출근하는 건물주",
     "post_id": "18133263718751882",
-    "views": 2,
+    "views": 3,
     "likes": 1,
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-22T09:59:09.649413+09:00"
+    "fetched_at": "2026-10-23T10:02:09.917913+09:00"
   },
   {
     "date": "2026-10-17",
     "time": "12:41",
     "app": "출근하는 건물주",
     "post_id": "18103802252140293",
-    "views": 6,
+    "views": 7,
     "likes": 1,
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-22T09:59:10.054362+09:00"
+    "fetched_at": "2026-10-23T10:02:10.227464+09:00"
   },
   {
     "date": "2026-10-17",
     "time": "19:16",
     "app": "고양이 귀여워",
     "post_id": "17926380882201011",
-    "views": 872,
+    "views": 874,
     "likes": 22,
     "replies": 12,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-22T09:59:10.355309+09:00"
+    "fetched_at": "2026-10-23T10:02:10.463710+09:00"
   },
   {
     "date": "2026-10-18",
     "time": "10:07",
     "app": "출근하는 건물주",
     "post_id": "17964564576200152",
-    "views": 136,
+    "views": 137,
     "likes": 1,
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-22T09:59:10.729819+09:00"
+    "fetched_at": "2026-10-23T10:02:10.695714+09:00"
   },
   {
     "date": "2026-10-18",
     "time": "12:23",
     "app": "고양이 귀여워",
     "post_id": "18197572432376115",
-    "error": "HTTP 400: {\"error\":{\"message\":\"Unsupported get request. Object with ID '18197572432376115' does not exist, cannot be loaded due to missing permissions, or does not support this operation\",\"code\":100,\"type\":\"THApiException\",\"error_subcode\":33,\"fbtrace_id\":\"A0pNofvtSaiGNy96VJfk7p4\"}}"
+    "error": "HTTP 400: {\"error\":{\"message\":\"Unsupported get request. Object with ID '18197572432376115' does not exist, cannot be loaded due to missing permissions, or does not support this operation\",\"code\":100,\"type\":\"THApiException\",\"error_subcode\":33,\"fbtrace_id\":\"AHm9LiikkGoQgnA-RL8gACW\"}}"
   },
   {
     "date": "2026-10-18",
     "time": "21:34",
     "app": "출근하는 건물주",
     "post_id": "17928288996186313",
-    "views": 6,
+    "views": 7,
     "likes": 1,
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-22T09:59:11.310306+09:00"
+    "fetched_at": "2026-10-23T10:02:11.094108+09:00"
   },
   {
     "date": "2026-10-19",
     "time": "08:12",
     "app": "출근하는 건물주",
     "post_id": "18106951298209529",
-    "views": 166,
+    "views": 167,
     "likes": 0,
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-22T09:59:11.679427+09:00"
+    "fetched_at": "2026-10-23T10:02:11.399881+09:00"
   },
   {
     "date": "2026-10-19",
     "time": "12:37",
     "app": "출근하는 건물주",
     "post_id": "17995068606028383",
-    "views": 10,
+    "views": 11,
     "likes": 1,
     "replies": 2,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-22T09:59:11.888557+09:00"
+    "fetched_at": "2026-10-23T10:02:11.607042+09:00"
   },
   {
     "date": "2026-10-19",
     "time": "20:48",
     "app": "고양이 귀여워",
     "post_id": "18113560070585123",
-    "views": 35,
+    "views": 36,
     "likes": 0,
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-22T09:59:12.080107+09:00"
+    "fetched_at": "2026-10-23T10:02:12.023745+09:00"
   },
   {
     "date": "2026-10-20",
     "time": "07:53",
     "app": "출근하는 건물주",
     "post_id": "18345912172267345",
-    "views": 84,
+    "views": 85,
     "likes": 0,
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-22T09:59:12.340896+09:00"
+    "fetched_at": "2026-10-23T10:02:12.228315+09:00"
   },
   {
     "date": "2026-10-20",
     "time": "12:08",
     "app": "출근하는 건물주",
     "post_id": "17974377798147434",
-    "views": 49,
+    "views": 50,
     "likes": 0,
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-22T09:59:12.775494+09:00"
+    "fetched_at": "2026-10-23T10:02:12.626315+09:00"
   },
   {
     "date": "2026-10-20",
     "time": "19:27",
     "app": "고양이 귀여워",
     "post_id": "18201545431375704",
-    "views": 28,
+    "views": 29,
     "likes": 0,
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-22T09:59:13.116531+09:00"
+    "fetched_at": "2026-10-23T10:02:12.948184+09:00"
   },
   {
     "date": "2026-10-21",
     "time": "08:36",
     "app": "출근하는 건물주",
     "post_id": "18167025562497248",
-    "views": 27,
+    "views": 28,
     "likes": 0,
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-22T09:59:13.486835+09:00"
+    "fetched_at": "2026-10-23T10:02:13.256458+09:00"
   },
   {
     "date": "2026-10-21",
     "time": "12:52",
     "app": "출근하는 건물주",
     "post_id": "18654460276025897",
-    "views": 220,
+    "views": 223,
     "likes": 1,
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-22T09:59:13.699180+09:00"
+    "fetched_at": "2026-10-23T10:02:13.596579+09:00"
   },
   {
     "date": "2026-10-21",
     "time": "21:13",
     "app": "고양이 귀여워",
     "post_id": "17995973796016589",
-    "views": 214,
+    "views": 220,
     "likes": 0,
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-22T09:59:14.108653+09:00"
+    "fetched_at": "2026-10-23T10:02:14.278490+09:00"
   },
   {
     "date": "2026-10-22",
     "time": "07:48",
     "app": "출근하는 건물주",
     "post_id": "18105696764362899",
-    "views": 32,
+    "views": 37,
     "likes": 0,
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-22T09:59:14.479104+09:00"
+    "fetched_at": "2026-10-23T10:02:14.545289+09:00"
+  },
+  {
+    "date": "2026-10-22",
+    "time": "12:14",
+    "app": "출근하는 건물주",
+    "post_id": "18115594259112925",
+    "views": 23,
+    "likes": 0,
+    "replies": 0,
+    "reposts": 0,
+    "quotes": 0,
+    "fetched_at": "2026-10-23T10:02:14.820273+09:00"
+  },
+  {
+    "date": "2026-10-22",
+    "time": "19:41",
+    "app": "고양이 귀여워",
+    "post_id": "18120074119932488",
+    "views": 737,
+    "likes": 8,
+    "replies": 2,
+    "reposts": 1,
+    "quotes": 0,
+    "fetched_at": "2026-10-23T10:02:15.036232+09:00"
+  },
+  {
+    "date": "2026-10-23",
+    "time": "08:21",
+    "app": "출근하는 건물주",
+    "post_id": "17957245116267031",
+    "views": 27,
+    "likes": 0,
+    "replies": 0,
+    "reposts": 0,
+    "quotes": 0,
+    "fetched_at": "2026-10-23T10:02:15.244256+09:00"
   }
 ]
