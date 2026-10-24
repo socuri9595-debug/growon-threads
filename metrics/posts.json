@@ -9,7 +9,7 @@
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-23T10:02:09.917913+09:00"
+    "fetched_at": "2026-10-24T10:11:57.096974+09:00"
   },
   {
     "date": "2026-10-17",
@@ -21,7 +21,7 @@
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-23T10:02:10.227464+09:00"
+    "fetched_at": "2026-10-24T10:11:57.661450+09:00"
   },
   {
     "date": "2026-10-17",
@@ -33,7 +33,7 @@
     "replies": 12,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-23T10:02:10.463710+09:00"
+    "fetched_at": "2026-10-24T10:11:58.169294+09:00"
   },
   {
     "date": "2026-10-18",
@@ -45,14 +45,14 @@
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-23T10:02:10.695714+09:00"
+    "fetched_at": "2026-10-24T10:11:58.449562+09:00"
   },
   {
     "date": "2026-10-18",
     "time": "12:23",
     "app": "고양이 귀여워",
     "post_id": "18197572432376115",
-    "error": "HTTP 400: {\"error\":{\"message\":\"Unsupported get request. Object with ID '18197572432376115' does not exist, cannot be loaded due to missing permissions, or does not support this operation\",\"code\":100,\"type\":\"THApiException\",\"error_subcode\":33,\"fbtrace_id\":\"AHm9LiikkGoQgnA-RL8gACW\"}}"
+    "error": "HTTP 400: {\"error\":{\"message\":\"Unsupported get request. Object with ID '18197572432376115' does not exist, cannot be loaded due to missing permissions, or does not support this operation\",\"code\":100,\"type\":\"THApiException\",\"error_subcode\":33,\"fbtrace_id\":\"AnE5qOspkuHvZRQT-mrIZwY\"}}"
   },
   {
     "date": "2026-10-18",
@@ -64,7 +64,7 @@
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-23T10:02:11.094108+09:00"
+    "fetched_at": "2026-10-24T10:11:58.999636+09:00"
   },
   {
     "date": "2026-10-19",
@@ -76,7 +76,7 @@
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-23T10:02:11.399881+09:00"
+    "fetched_at": "2026-10-24T10:11:59.381942+09:00"
   },
   {
     "date": "2026-10-19",
@@ -88,7 +88,7 @@
     "replies": 2,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-23T10:02:11.607042+09:00"
+    "fetched_at": "2026-10-24T10:11:59.631079+09:00"
   },
   {
     "date": "2026-10-19",
@@ -100,7 +100,7 @@
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-23T10:02:12.023745+09:00"
+    "fetched_at": "2026-10-24T10:12:00.107039+09:00"
   },
   {
     "date": "2026-10-20",
@@ -112,7 +112,7 @@
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-23T10:02:12.228315+09:00"
+    "fetched_at": "2026-10-24T10:12:00.311182+09:00"
   },
   {
     "date": "2026-10-20",
@@ -124,7 +124,7 @@
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-23T10:02:12.626315+09:00"
+    "fetched_at": "2026-10-24T10:12:01.388892+09:00"
   },
   {
     "date": "2026-10-20",
@@ -136,7 +136,7 @@
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-23T10:02:12.948184+09:00"
+    "fetched_at": "2026-10-24T10:12:01.849873+09:00"
   },
   {
     "date": "2026-10-21",
@@ -148,7 +148,7 @@
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-23T10:02:13.256458+09:00"
+    "fetched_at": "2026-10-24T10:12:02.108895+09:00"
   },
   {
     "date": "2026-10-21",
@@ -160,7 +160,7 @@
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-23T10:02:13.596579+09:00"
+    "fetched_at": "2026-10-24T10:12:02.901460+09:00"
   },
   {
     "date": "2026-10-21",
@@ -172,7 +172,7 @@
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-23T10:02:14.278490+09:00"
+    "fetched_at": "2026-10-24T10:12:03.823208+09:00"
   },
   {
     "date": "2026-10-22",
@@ -184,7 +184,7 @@
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-23T10:02:14.545289+09:00"
+    "fetched_at": "2026-10-24T10:12:04.245964+09:00"
   },
   {
     "date": "2026-10-22",
@@ -196,30 +196,54 @@
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-23T10:02:14.820273+09:00"
+    "fetched_at": "2026-10-24T10:12:04.474936+09:00"
   },
   {
     "date": "2026-10-22",
     "time": "19:41",
     "app": "고양이 귀여워",
     "post_id": "18120074119932488",
-    "views": 737,
+    "views": 768,
     "likes": 8,
     "replies": 2,
     "reposts": 1,
     "quotes": 0,
-    "fetched_at": "2026-10-23T10:02:15.036232+09:00"
+    "fetched_at": "2026-10-24T10:12:04.739104+09:00"
   },
   {
     "date": "2026-10-23",
     "time": "08:21",
     "app": "출근하는 건물주",
     "post_id": "17957245116267031",
-    "views": 27,
+    "views": 54,
+    "likes": 0,
+    "replies": 1,
+    "reposts": 0,
+    "quotes": 0,
+    "fetched_at": "2026-10-24T10:12:05.148388+09:00"
+  },
+  {
+    "date": "2026-10-23",
+    "time": "13:03",
+    "app": "고양이 귀여워",
+    "post_id": "18452243758120857",
+    "views": 303,
+    "likes": 1,
+    "replies": 1,
+    "reposts": 0,
+    "quotes": 0,
+    "fetched_at": "2026-10-24T10:12:05.693424+09:00"
+  },
+  {
+    "date": "2026-10-23",
+    "time": "18:26",
+    "app": "출근하는 건물주",
+    "post_id": "18007147601803200",
+    "views": 149,
     "likes": 0,
     "replies": 0,
     "reposts": 0,
     "quotes": 0,
-    "fetched_at": "2026-10-23T10:02:15.244256+09:00"
+    "fetched_at": "2026-10-24T10:12:06.333353+09:00"
   }
 ]
