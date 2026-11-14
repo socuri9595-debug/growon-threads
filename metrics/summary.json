@@ -1,30 +1,30 @@
 {
   "window_days": 7,
-  "generated_at": "2026-11-13T11:58:19.348594+09:00",
+  "generated_at": "2026-11-14T11:43:43.390454+09:00",
   "apps": [
     {
-      "app": "출근하는 건물주",
-      "posts": 3,
+      "app": "고양이 귀여워",
+      "posts": 1,
       "avg": {
-        "views": 30.0,
-        "likes": 1.0,
-        "replies": 0.3,
+        "views": 107.0,
+        "likes": 2.0,
+        "replies": 1.0,
         "reposts": 0.0,
         "quotes": 0.0
       },
-      "score": 2.2
+      "score": 6.07
     },
     {
-      "app": "고양이 귀여워",
-      "posts": 3,
+      "app": "출근하는 건물주",
+      "posts": 1,
       "avg": {
-        "views": 44.3,
-        "likes": 0.7,
-        "replies": 0.3,
+        "views": 19.0,
+        "likes": 1.0,
+        "replies": 0.0,
         "reposts": 0.0,
         "quotes": 0.0
       },
-      "score": 2.04
+      "score": 1.19
     }
   ]
 }
